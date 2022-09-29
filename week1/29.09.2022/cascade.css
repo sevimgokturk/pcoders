@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Alkalami&family=Bungee+Spice&family=Poppins:wght@100;500&display=swap');
+
+p {
+    color: rgb#0000FF !important;
+    font-family: 'Alkalami', serif;
+  }
+  
+  
+  p {
+    color: rgba(220, 60, 60, 0);
+  }
+  body{ 
+   
+    background-image:url(../26.09.2022-1/img/GL3.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+  }

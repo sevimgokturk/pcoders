@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Alkalami&family=Bungee+Spice&family=Inter+Tight:wght@100;200&family=Poppins:wght@100;500&display=swap');
+h2{
+    font-family: 'Bungee Spice', cursive;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif; ;
+}
+
+h3{
+    font-family: monospace;
+}
