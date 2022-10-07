@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            box-sizing: border-box;
+        }
+        
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+        body{
+            background-color: aliceblue;
+        }
+
+        section{
+            background-color: brown;
+            border: 3px black solid;
+            
+        }
+
+        main{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr ;
+            grid-gap: 1vw;
+            justify-content: center;
+            align-content: center;/*vertical*/
+            height: 100vh;/*to fix page*/
+            align-items: stretch;/*horizantal*/
+
+        }
+
+        @media (min-width: 700px){
+            main{
+                grid-template-columns: 3fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+            }
+            section{
+
+                background-color: blue;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <section class="a"><h1>Title</h1></section>
+        <section class="b"><h1>Title</h1></section>
+        <section class="c"><h1>Title</h1></section>
+        <section class="d"><h1>Title</h1></section>
+        <section class="a"><h1>Title</h1></section>
+        <section class="b"><h1>Title</h1></section>
+        <section class="c"><h1>Title</h1></section> 
+
+    </main>
+   
+</body>
+</html>

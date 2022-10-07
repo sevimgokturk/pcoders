@@ -1,0 +1,84 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  header{
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    text-align: center;/*????????*/
+    justify-content: center;
+    background-color: lightblue;
+  }
+
+  section{
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+
+  article{
+    width: 100%;
+    min-height: 300px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  article:first-child{
+    background-color: deepskyblue;
+  }
+
+  article:nth-child(2){
+    background-color: gold;
+  }
+
+  article:nth-child(3){
+    background-color: crimson;
+  }
+
+  article:nth-child(4){
+    background-color: violet;
+  }
+
+  @media(min-width:760px)and (max-width:1024px){
+    section{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    article{
+        width: 50%;/* i dont understood why i need this*/
+    }
+  }
+
+  @media(min-width:1024px){
+
+    main{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    section{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    article{
+        width: 33.3%;/* i dont understood why i need this*/
+    }
+
+    article:first-child{
+        width: 100%;
+        order: 4;
+        min-height: 200px;
+    }
+  }

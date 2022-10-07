@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+
+        html{
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+
+        }
+        header{
+            position: fixed;
+            /*right:0 ;
+            top: 0;*/  
+        }
+
+        nav{
+            display: block;
+            display: flex;
+            flex-direction: column;
+            background-color: aqua;
+            display: flex;
+            flex-direction: column;
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+
+        .sidenav{
+            overflow-x: hidden;
+        }
+        @media(max-width:760px){
+           
+            header{
+               display: block;
+               width: 100%;
+               display: grid;
+               grid-column: 2;
+            }
+            span{
+                display: none;  
+            }
+            .sidenav{
+                display: grid;
+                display: inline-block;
+                grid-column-start: 1;
+                grid-column-end: 2; 
+                align-items: center;
+                justify-content: space-around;
+            }
+            .closebtn{
+                display: none;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+             <nav  id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a href="/...">Home</a>
+                <a href="/...">About</a>
+                <a href="/...">Work</a>
+                <a href="/...">Blog</a>
+                <a href="/...">Contact</a>
+             </nav>
+    </header>
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        
+        </script>
+</body>
+</html>
